@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <!--шапка сайта-->
+    <header class="page-header">
+        <div class="container flex-container">
+            <nav class="nav">
+                <a href="" class="logo logo--light-theme"><span class="logo__accent">Web</span>Studio</a>
+                <ul class="nav__list list">
+                    <li class="nav__item item">
+                        <a href="./index.html" class="nav__link  link">Студия</a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="./contacts.html" class="nav__link link nav__link--current link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link link">
+                        <svg class="contacts__icon" width="16px">
+                            <use href="./images/icons.svg#icon-envelope">
+                            </use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__icon" width="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+<!--Подвал-->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="adress-thumb">
+            <a class="logo logo--dark-theme" href="./index.html">
+                <span class="logo__accent">Web</span>
+                Studio
+            </a>
+            <address class="address">
+                <span class="adress__text">г. Киев, пр-т Леси Украинки, 26</span>
+                <ul class="adress__list list">
+                    <li class="adress__item">
+                        <a class="adress__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="adress__item">
+                        <a class="adress__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="join-form">
+            <p class="join-form__title">присоединяйтесь</p>
+            <ul class="join-form__socials socials list">
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Instagram"><svg
+                            class="socials__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Twitter"><svg
+                            class="socials__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Facebook">
+                        <svg class="socials__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Linkedin">
+                        <svg class="socials__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="subscription footer__subscription">
+            <h2 class="subscription__title">Подпишитесь на рассылку</h2>
+            <form class="subscription__form">
+                <input class="subscription__input" type="email" name="subscription" placeholder="E-mail">
+                <button class="button subscription__button" type="submit">Подписаться
+                    <svg class="button__icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send">
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</footer>
+    </body>
+</html>

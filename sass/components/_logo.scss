@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo--light-theme {
+    margin-right: 93px;
+    color: var(--title-color);
+}
+
+.logo--dark-theme {
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.logo__accent {
+    color: var(--accent-color);
+}

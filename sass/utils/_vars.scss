@@ -1,0 +1,58 @@
+:root {
+
+    /*Fonts*/
+
+    --primary-font: roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+
+    /* Text colors */
+    --text-color: #757575;
+    --title-color: #212121;
+    --white-color: #ffffff;
+    --white-transparency-06: rgba(255, 255, 255, 0.6);
+    --modal-placeholder-color: rgba(117, 117, 117, 0.5);
+    --footer-placeholder-color: rgba(255, 255, 255, 0.6);
+
+    /* Button colors */
+    --accent-color: #2196f3;
+    --hover-color: #188ce8;
+
+    /* Background colors */
+    --primary-bkgrnd: #ffffff;
+    --secondary-bkgrnd: #f5f4fa;
+    --button-bkgrnd: #f5f4fa;
+    --hero-bkgrnd: #c4c4c4;
+    --icon-bkgrnd: #f5f4fa;
+    --footer-icon-bkgrnd: rgba(255, 255, 255, 0.1);
+    --card-overlay: rgba(33, 150, 243, 0.9);
+    --footer-background-color: rgba(47, 48, 58, 1);
+
+    /* Border colors */
+    --header-border: #ececec;
+    --portfolio-card-border: #eeeeee;
+    --clients-border: #afb1b8;
+
+    /* Timing function */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Shadows */
+    --filter-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    /* icon colors */
+    --icon-color: #afb1b8;
+    --order-form__icon-color: rgba(33, 33, 33, 1);
+    --checkbox-color: rgba(33, 33, 33, 1);
+
+    /* Overlay color */
+    --Hero-overlay: rgba(47, 48, 58, 0.4);
+
+    /* Cards distance */
+    --cards-gap: 30px;
+}
+
+

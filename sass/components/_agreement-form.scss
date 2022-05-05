@@ -1,0 +1,48 @@
+.agreement-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.agreement-form__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agreement-form__label {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.agreement-form__link {
+    color: var(--accent-color);
+}
+
+.checkbox {
+    width: 16px;
+    height: 15px;
+}
+
+.checkbox__icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translate(0, -50%);
+    fill: var(--checkbox-color);
+    transition: background-color 250ms var(--timing-function);
+}
+
+.agreement-form__checkbox:checked~.checkbox .checkbox__icon {
+    background-color: var(--accent-color);
+    border-radius: 1px;
+    fill: var(--white-color);
+}
+
+.checkbox__icon--active {
+    fill: transparent;
+    transition: fill 250ms var(--timing-function);
+}
+

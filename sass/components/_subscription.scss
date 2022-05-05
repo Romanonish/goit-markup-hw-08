@@ -1,0 +1,52 @@
+.subscription {
+    margin-left: auto;
+}
+
+.subscription__title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.subscription__form {
+    display: flex;
+    position: relative;
+    color: var(--white-color);
+}
+
+.subscription__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: var(--white-color);
+    background-color: var(--footer-background-color);
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    border: none;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: outline 750ms var(--timing-function);
+
+    &:focus {
+        outline: 1px solid var(--white-color);
+    }
+
+    &::placeholder {
+        color: var(--footer-placeholder-color);
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+
+
