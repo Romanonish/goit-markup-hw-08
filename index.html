@@ -51,6 +51,12 @@
                 </a>
             </li>
         </ul>
+        <button class="mobile-menu__button" aria-label="Кнопка открытия меню" data-menu-button aria-expanded="false">
+            <svg class="mobile-menu__icon" width="40px" height="40px">
+            <use class="mobile-menu__open" href="./images/icons.svg#icon-mobile-menu"></use>
+            <use class="mobile-menu__close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+        </button>
         </div>
     </header>
 
@@ -58,15 +64,15 @@
     <main>
 
         <!-- Герой -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <h1 class="hero__title"> Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
 
         <!--Особенности-->
-        <section class="features">
+        <!-- <section class="features">
             <div class="container">
                 <h2 class="features__title title visually-hidden">Наши особенности</h2>
                 <ul class="features__list list">
@@ -108,10 +114,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Наше занятие-->
-        <section class="jobs">
+        <!-- <section class="jobs">
             <div class="container">
                 <h2 class="jobs__title title">Чем мы занимаемся</h2>
                 <ul class="jobs__list list">
@@ -139,10 +145,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Наша команда-->
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
@@ -296,10 +302,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Клиенты -->
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
             <h2 class="clients__title title">Постоянные клиенты</h2>
             <ul class="clients__list list">
@@ -353,11 +359,11 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--Подвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <div class="adress-thumb">
                 <a class="logo logo--dark-theme" href="./index.html">
@@ -419,10 +425,10 @@
             </div>
         </div>
         
-    </footer>
+    </footer> -->
 
     <!-- модальное окно -->
-    <div class="hero-backdrop is-hidden" data-modal>
+    <!-- <div class="hero-backdrop is-hidden" data-modal>
         <div class="hero-modal">
             <button class="button-close" data-modal-close>
                 <svg class="button-close__icon" width="18px" height="18px">
@@ -484,7 +490,49 @@
                 <button class="button agreement-form__button" type="submit">Отправить</button>
             </form>
         </div>
+    </div> -->
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" data-menu>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item">
+                    <a href="" class="mobile-nav__link link">Студия</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="" class="mobile-nav__link link">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="" class="mobile-nav__link link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-contacts">
+            <ul class="mobile-contacts__list list">
+                <li class="mobile-contacts__item">
+                    <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a></li>
+                <li class="mobile-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a></li>
+            </ul>
+        </div>
+        <div class="mobile-socials">
+            <ul class="mobile-socials__list list">
+                <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </div>
+    
+    
     <script src="./js/modal.js"></script>
     <script>
         (() => {
@@ -501,5 +549,6 @@
                 });
         })();
     </script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

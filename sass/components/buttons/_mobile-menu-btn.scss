@@ -1,0 +1,30 @@
+.mobile-menu__button {
+    position: relative;
+    display: block;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    margin-left: auto;
+    transition: color 250ms var(--timing-function);
+
+           &:hover {
+            color: var(--accent-color);
+        }
+
+        @media screen and (min-width:768px ) {
+            display: none;
+            
+        }
+}
+
+.mobile-menu__button.is-active .mobile-menu__open {
+    opacity: 0;
+}
+
+.mobile-menu__button.is-active .mobile-menu__close {
+    opacity: 1;
+}

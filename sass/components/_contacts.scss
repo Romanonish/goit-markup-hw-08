@@ -1,11 +1,30 @@
 .contacts {
-    display: flex;
+    display: none;
+    // display: flex;
     margin-left: auto;
     align-items: center;
+
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+
+}
+
+.contacts__item {
+    margin: 0;
+    
 }
 
 .contacts__item:last-child {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
+    
 }
 
 .contacts__link {

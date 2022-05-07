@@ -1,0 +1,13 @@
+.mobile-menu {
+    &__icon {
+    fill: currentColor;
+}
+
+    &__open {
+        opacity: 1;
+    }
+
+    &__close {
+        opacity: 0;
+    }
+}
