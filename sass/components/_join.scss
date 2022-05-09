@@ -1,15 +1,25 @@
 .join-form {
-    margin-left: 70px;
+        margin-bottom: 60px;
+    // margin-left: 70px;
+
+    @include mq(desktop) {
+            margin: 0;
+        }
 }
 
 .join-form__title {
-    display: inline-block;
+    display: block;
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: center;
     color: var(--white-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @include mq(desktop) {
+            text-align: left;
+        }
 }

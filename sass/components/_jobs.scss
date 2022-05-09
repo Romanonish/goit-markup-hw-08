@@ -1,5 +1,10 @@
 .jobs {
+    display: none;
     padding-bottom: 94px;
+
+    @include mq(desktop){
+        display: block;
+    }
 }
 
 .jobs__title {

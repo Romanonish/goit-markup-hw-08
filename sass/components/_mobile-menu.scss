@@ -4,7 +4,7 @@
     top: 0;
     background-color: var(--white-color);
     width: 100%;
-    height: 100%;
+    // height: 100%;
     padding: 48px 40px;
     transition: transform 750ms var(--timing-function);
     pointer-events: none;
@@ -56,7 +56,7 @@ margin-bottom: 302px;
             letter-spacing: 0.02em;
             transition: color 250ms var(--timing-function);
 
-            @media screen and (min-width:320px) and (max-width: 479px) {
+            @media screen and (max-width: 479px) {
                font-size: 26px; 
             }
             

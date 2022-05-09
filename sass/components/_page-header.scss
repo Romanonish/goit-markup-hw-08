@@ -4,7 +4,12 @@
 
 .flex-container {
     display: flex;
-    align-items: center
+    align-items: center;
+    height: 60px;
+
+    @include mq(tablet){
+        height: 80px;
+    }
 }
 
 @import "./logo";

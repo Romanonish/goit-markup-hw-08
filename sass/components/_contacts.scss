@@ -17,7 +17,12 @@
 
 .contacts__item {
     margin: 0;
-    
+    display: flex;
+
+    @include mq(tablet-only){
+        &:not(:last-child) {margin-bottom: 10px;
+        }
+    }
 }
 
 .contacts__item:last-child {
@@ -28,9 +33,9 @@
 }
 
 .contacts__link {
-    color: var(--text-color);
     display: inline-flex;
     align-items: center;
+    color: var(--text-color);
     transition: color 250ms var(--timing-function);
     text-decoration: none;
     font-weight: 500;

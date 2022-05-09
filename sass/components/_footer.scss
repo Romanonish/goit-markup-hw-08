@@ -6,8 +6,34 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(tablet) {
+            padding-left: 76px;
+            padding-right: 89px;
+        }
+
+                @include mq(desktop) {
+                    flex-direction: row;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
 }
+
+ .footer__thumb {
+    @include mq(tablet) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        @include mq(desktop) {
+            justify-content: start;
+        }
+ }
+
 
 @import "./address";
 

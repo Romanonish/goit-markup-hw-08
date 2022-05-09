@@ -4,6 +4,17 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
+
+}
+ 
+.adress-thumb {
+    margin-bottom: 60px;
+
+    @include mq(desktop) {
+        width: auto;
+            margin: 0;
+            margin-right: 70px;
+        }
 }
 
 .adress__link {
@@ -23,9 +34,22 @@
 
 .adress__text {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
+
+    @include mq(desktop) {
+            text-align: left;
+            margin-bottom: 9px;
+        }
 }
 
-.adress__item:not(:first-child) {
-    margin-top: 9px;
+.adress__item {
+text-align: center;
+&:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+@include mq(desktop) {
+    text-align: left;
+    }
 }

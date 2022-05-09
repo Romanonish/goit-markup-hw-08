@@ -1,5 +1,6 @@
 .logo {
     display: block;
+    margin-bottom: 20px;
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -22,6 +23,11 @@
     margin-right: 0;
     margin-bottom: 20px;
     color: var(--white-color);
+    text-align: center;
+
+    @include mq(desktop) {
+            text-align: left;
+        }
 }
 
 .logo__accent {
