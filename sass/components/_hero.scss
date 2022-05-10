@@ -20,7 +20,7 @@
             background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), url(/images/hero/hero-bg_md.png);
             background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), -webkit-image-set(url(/images/hero/hero-bg_md.webp) 1x);
             max-width: 768px;
-            margin-bottom: 60px;
+
             @include mq(retina){
                 background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), url(/images/hero/hero-bg_md@2x.png);
                 background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), -webkit-image-set(url(/images/hero/hero-bg_md@2x.webp) 2x);
@@ -33,6 +33,7 @@
             padding-top: 200px;
             padding-bottom: 200px;
             margin-bottom: 0;
+            
                 @include mq(retina) {
                 background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), url(/images/hero/hero-bg_lg@2x.png);
                 background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), -webkit-image-set(url(/images/hero/hero-bg_lg@2x.webp) 2x);
@@ -59,6 +60,11 @@
         line-height: 1.36;
         padding: 0;
     }
+}
+
+.hero__button {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @import "./buttons/btn-primary"

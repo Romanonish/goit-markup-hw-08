@@ -106,7 +106,7 @@ img {
 
 .button {
   border: none;
-  display: inline-block;
+  display: block;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -226,7 +226,7 @@ img {
 .mobile-menu__button {
   position: relative;
   display: block;
-  z-index: 100;
+  z-index: 1;
   width: 40px;
   height: 40px;
   margin: 0;
@@ -256,10 +256,14 @@ img {
   opacity: 1;
 }
 
+.order-form {
+  width: 100%;
+}
+
 .order-form__title {
   display: block;
   color: var(--title-color);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-align: center;
   Font-style: Bold;
   Font-size: 20px;
@@ -276,12 +280,6 @@ img {
 }
 
 .inputarea {
-  width: 448px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,6 +287,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
 }
 
 .order-form__item {
@@ -304,10 +310,6 @@ img {
 
 .order-form__item:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.order-form__item:last-child {
-  margin-bottom: 20px;
 }
 
 .order-form__input {
@@ -348,7 +350,7 @@ img {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  height: 138px;
+  height: 120px;
   resize: none;
   -webkit-transition: border 250ms var(--timing-function);
   transition: border 250ms var(--timing-function);
@@ -391,12 +393,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: 30px;
 }
 
@@ -407,8 +409,9 @@ img {
 }
 
 .agreement-form__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-left: 24px;
 }
 
 .agreement-form__link {
@@ -423,7 +426,7 @@ img {
 .checkbox__icon {
   position: absolute;
   top: 50%;
-  left: 13px;
+  left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   fill: var(--checkbox-color);
@@ -489,6 +492,10 @@ img {
 }
 
 .mobile-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-nav__link--current {
   color: var(--accent-color);
 }
 
@@ -814,7 +821,6 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--Hero-overlay)), to(var(--Hero-overlay))), -webkit-image-set(url(/images/hero/hero-bg_md.webp) 1x);
     background-image: linear-gradient(var(--Hero-overlay), var(--Hero-overlay)), -webkit-image-set(url(/images/hero/hero-bg_md.webp) 1x);
     max-width: 768px;
-    margin-bottom: 60px;
   }
 }
 
@@ -872,9 +878,14 @@ img {
   }
 }
 
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
   border: none;
-  display: inline-block;
+  display: block;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -916,6 +927,7 @@ img {
 
 .hero-backdrop {
   position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -937,15 +949,14 @@ img {
 }
 
 .hero-modal {
-  position: absolute;
-  z-index: 100;
-  width: 528px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
-  top: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   left: 50%;
+  top: 50%;
+  max-width: 450px;
+  padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   background-color: var(--white-color);
@@ -956,6 +967,28 @@ img {
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 479px) {
+  .hero-modal {
+    top: 0;
+    -webkit-transform: translate(-50%, 0) scale(1);
+            transform: translate(-50%, 0) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-modal {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-modal {
+    max-width: 528px;
+  }
 }
 
 .features {

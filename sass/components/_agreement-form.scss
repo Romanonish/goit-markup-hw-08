@@ -1,8 +1,8 @@
 .agreement-form {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: left;
     margin-bottom: 30px;
 }
 
@@ -13,8 +13,9 @@
 }
 
 .agreement-form__label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
+    margin-left: 24px;
 }
 
 .agreement-form__link {
@@ -29,7 +30,7 @@
 .checkbox__icon {
     position: absolute;
     top: 50%;
-    left: 13px;
+    left: 0;
     transform: translate(0, -50%);
     fill: var(--checkbox-color);
     transition: background-color 250ms var(--timing-function);
