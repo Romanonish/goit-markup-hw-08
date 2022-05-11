@@ -5,7 +5,7 @@
     @include mq(desktop) {
             padding-top: 94px;
             padding-bottom: 94px;
-        }
+    }
 }
 
 .clients__title {
@@ -17,7 +17,7 @@
             margin-bottom: 50px;
             font-size: 36px;
             line-height: 1.17;
-        }
+    }
 }
 
 .clients__list {
@@ -31,7 +31,7 @@
             justify-content: space-between;
             margin-left: 0;
             margin-bottom: 0;
-        }
+    }
 }
 
 .clients__item {
@@ -47,13 +47,14 @@
             flex-basis: #{calc(100%/3 - 30px)};
         }
 
-                @include mq(desktop) {
-                    margin-left: 0;
-                    margin-bottom: 0;
-                    &:not(:last-child){
-                        margin-right: 30px;
-                    }
-                }
+        @include mq(desktop) {
+            margin-left: 0;
+            margin-bottom: 0;
+            
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
 }
 
 .clients__icon {

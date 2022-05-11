@@ -1,10 +1,9 @@
 .join-form {
         margin-bottom: 60px;
-    // margin-left: 70px;
 
     @include mq(desktop) {
             margin: 0;
-        }
+    }
 }
 
 .join-form__title {
@@ -21,5 +20,5 @@
 
     @include mq(desktop) {
             text-align: left;
-        }
+    }
 }

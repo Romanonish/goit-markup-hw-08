@@ -6,9 +6,7 @@
     @include mq(desktop) {
         padding-top: 94px;
         padding-bottom: 94px;
-        }
-
-    
+    }
 }
 
 .team__title {
@@ -20,7 +18,7 @@
         margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.17;
-        }
+    }
 }
 
 .team__list {
@@ -42,7 +40,6 @@
 }
 
 .team__card {
-
     margin-bottom: 30px;
     max-width: 450px;
     background-color: var(--white-color);
@@ -56,7 +53,6 @@
     }
 
     @include mq(desktop){
-    
     flex-basis: calc(100% / 4 - var(--cards-gap));
     margin-bottom: var(--cards-gap);
     margin-left: var(--cards-gap);

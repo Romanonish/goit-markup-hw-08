@@ -19,10 +19,10 @@
                 <a href="" class="logo logo--light-theme"><span class="logo__accent">Web</span>Studio</a>
                 <ul class="nav__list list">
                     <li class="nav__item item">
-                        <a href="./index.html" class="nav__link  link">Студия</a>
+                        <a href="./index.html" class="nav__link">Студия</a>
                     </li>
                     <li class="nav__item item">
-                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                        <a href="./portfolio.html" class="nav__link link">Портфолио</a>
                     </li>
                     <li class="nav__item item">
                         <a href="./contacts.html" class="nav__link link nav__link--current link">Контакты</a>
@@ -33,7 +33,7 @@
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link link">
                         <svg class="contacts__icon" width="16px">
-                            <use href="./images/icons.svg#icon-envelope">
+                            <use href="./images/icons/icons.svg#icon-envelope">
                             </use>
                         </svg>info@devstudio.com
                     </a>
@@ -41,74 +41,82 @@
                 <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link">
                         <svg class="contacts__icon" width="16px">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
+                            <use href="./images/icons/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11
                     </a>
                 </li>
             </ul>
+            <button class="mobile-menu__button" aria-label="Кнопка открытия меню" data-menu-button aria-expanded="false">
+                <svg class="mobile-menu__icon" width="40px" height="40px">
+                    <use class="mobile-menu__open" href="./images/icons/icons.svg#icon-mobile-menu"></use>
+                    <use class="mobile-menu__close" href="./images/icons/icons.svg#icon-mobile-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
     
 <!--Подвал-->
 <footer class="footer">
     <div class="container footer__container">
-        <div class="adress-thumb">
-            <a class="logo logo--dark-theme" href="./index.html">
-                <span class="logo__accent">Web</span>
-                Studio
-            </a>
-            <address class="address">
-                <span class="adress__text">г. Киев, пр-т Леси Украинки, 26</span>
-                <ul class="adress__list list">
-                    <li class="adress__item">
-                        <a class="adress__link" href="mailto:info@example.com">info@example.com</a>
+        <div class="footer__thumb">
+            <div class="adress-thumb">
+                <a class="logo logo--dark-theme" href="./index.html">
+                    <span class="logo__accent">Web</span>Studio
+                </a>
+                <address class="address">
+                    <span class="adress__text">г. Киев, пр-т Леси Украинки, 26</span>
+                    <ul class="adress__list list">
+                        <li class="adress__item">
+                            <a class="adress__link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="adress__item">
+                            <a class="adress__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="join-form">
+                <p class="join-form__title">присоединяйтесь</p>
+                <ul class="join-form__socials socials list">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark-theme" aria-label="Instagram"><svg
+                                class="socials__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="adress__item">
-                        <a class="adress__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark-theme" aria-label="Twitter"><svg
+                                class="socials__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark-theme" aria-label="Facebook">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--dark-theme" aria-label="Linkedin">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
-        <div class="join-form">
-            <p class="join-form__title">присоединяйтесь</p>
-            <ul class="join-form__socials socials list">
-                <li class="socials__item">
-                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Instagram"><svg
-                            class="socials__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Twitter"><svg
-                            class="socials__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Facebook">
-                        <svg class="socials__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="" class="socials__link socials__link--dark-theme" aria-label="Linkedin">
-                        <svg class="socials__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+
         <div class="subscription footer__subscription">
             <h2 class="subscription__title">Подпишитесь на рассылку</h2>
             <form class="subscription__form">
                 <input class="subscription__input" type="email" name="subscription" placeholder="E-mail">
                 <button class="button subscription__button" type="submit">Подписаться
                     <svg class="button__icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-send">
+                        <use href="./images/icons/icons.svg#icon-send">
                     </svg>
                 </button>
             </form>
@@ -116,5 +124,48 @@
     </div>
 
 </footer>
+<!-- Мобильное меню -->
+<div class="mobile-menu" data-menu>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link link">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./contacts.html" class="mobile-nav__link link mobile-nav__link--current">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mobile-contacts">
+        <ul class="mobile-contacts__list list">
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-socials">
+        <ul class="mobile-socials__list list">
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./js/mobile-menu.js"></script>
     </body>
 </html>

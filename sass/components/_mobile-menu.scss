@@ -4,7 +4,6 @@
     top: 0;
     background-color: var(--white-color);
     width: 100%;
-    // height: 100%;
     padding: 48px 40px;
     transition: transform 750ms var(--timing-function);
     pointer-events: none;
@@ -16,7 +15,7 @@
             visibility: visible;
             pointer-events: initial;
             scale: 100%;
-        }
+    }
 }
 
 .mobile-nav {
@@ -86,7 +85,7 @@ margin-bottom: 302px;
     }
 
     &__item:not(:last-child) {
-            margin-bottom: 32px;
+        margin-bottom: 32px;
     }
 }
 
@@ -101,7 +100,7 @@ margin-bottom: 302px;
         letter-spacing: 0.02em;
         text-decoration: none;
         color: var(--accent-color);
-        }
+    }
 
         &__link:hover {
             color: var(--hover-color);

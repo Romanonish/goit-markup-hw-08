@@ -22,8 +22,6 @@
 .hero-modal {
     position: relative;
     display: flex;
-    // margin-left: auto;
-    // margin-right: auto;
     left: 50%;
     top: 50%;
     max-width: 450px;
@@ -45,7 +43,7 @@
             transform: translate(-50%, -50%) scale(1);
         }
 
-                @include mq(desktop) {
-                    max-width: 528px;
-                }
+        @include mq(desktop) {
+            max-width: 528px;
+        }
 }

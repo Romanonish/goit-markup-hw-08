@@ -1,5 +1,5 @@
 .order-form {
-width: 100%;
+    width: 100%;
 }
 
 .order-form__title {
@@ -49,15 +49,16 @@ width: 100%;
     padding-left: 42px;
     transition: border 250ms var(--timing-function);
 
-&:focus {
-    border: 1px solid #2196f3;
-    box-sizing: border-box;
-    border-radius: 4px;
-    outline: transparent;
-}
-&:focus~.order-form__thumb {
-    color: var(--accent-color);
-}
+    &:focus {
+        border: 1px solid #2196f3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: transparent;
+    }
+
+    &:focus~.order-form__thumb {
+        color: var(--accent-color);
+    }
 }
 
 .order-form__icon {
@@ -85,10 +86,11 @@ width: 100%;
         line-height: 1.14;
         color: var(--modal-placeholder-color);
     }
+    
     &:focus {
         border: 1px solid #2196f3;
         box-sizing: border-box;
         border-radius: 4px;
         outline: transparent;
-}
+    }
 }

@@ -5,13 +5,10 @@ padding-bottom: 60px;
             padding-top: 94px;
             padding-bottom: 94px;
         }
-    
 }
 
 .features__list {
     
-    outline: 1px solid blue;
-
     @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -19,10 +16,10 @@ padding-bottom: 60px;
     margin-bottom: -30px;
     }
     
-        @include mq(desktop) {
+    @include mq(desktop) {
         flex-wrap: nowrap;
         margin: 0;
-        }
+    }
 }
 
 .features__icon {
@@ -67,17 +64,17 @@ padding-bottom: 60px;
     &:not(:last-child) {
             margin-bottom: 30px;
         }
-    outline: 1px solid black;
-        @include mq(tablet) {
-            margin-right: 30px;
-            margin-bottom: 30px;
-            flex-basis: #{calc(100%/2 - 30px)};
-        }
+    
+    @include mq(tablet) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        flex-basis: #{calc(100%/2 - 30px)};
+    }
+    @include mq(desktop) {
+        margin: 0;
 
-        @include mq(desktop) {
-            margin: 0;
-            &:not(:last-child) {margin-bottom: 0;
+         &:not(:last-child) {margin-bottom: 0;
             margin-right: 30px;
-            }
         }
+    }
 }

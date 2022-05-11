@@ -15,7 +15,6 @@
 }
 
 .logo--light-theme {
-    // margin-right: 93px;
     color: var(--title-color);
 }
 
@@ -26,8 +25,8 @@
     text-align: center;
 
     @include mq(desktop) {
-            text-align: left;
-        }
+        text-align: left;
+    }
 }
 
 .logo__accent {

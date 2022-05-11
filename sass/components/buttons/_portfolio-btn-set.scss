@@ -1,11 +1,55 @@
 .button-set {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+    max-width: 370px;
+      
+    &__item {
+        margin-bottom: 15px;
+    }
 
-.button-set__item:not(:first-child) {
-    margin-left: 8px;
+    &__item:not(:first-child) {
+        margin-left: 8px;
+    }
+    
+    &__item:nth-last-child(-n+2){
+            margin-bottom: 0;
+    }
+
+    &__item:nth-child(4n) {
+            margin-left: 0;
+
+            @include mq(tablet){
+                margin-left: 8px;
+            }
+    }
+    
+    @include mq(mobile-small){
+        max-width: 300px;
+        &__item:nth-child(4n){
+            margin-left: 8px;
+        }
+
+        &__item:nth-child(2n+1) {
+                margin-left: 0;
+        }
+
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+        @include mq(tablet) {
+            flex-wrap: nowrap;
+            max-width: 100%;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 50px;
+        }
 }
 
 .button-filter {
@@ -32,4 +76,3 @@
             box-shadow: var(--filter-button-shadow);
         }
 }
-

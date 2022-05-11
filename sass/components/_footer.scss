@@ -14,14 +14,14 @@
             padding-right: 89px;
         }
 
-                @include mq(desktop) {
-                    flex-direction: row;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
+    @include mq(desktop) {
+        flex-direction: row;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
- .footer__thumb {
+.footer__thumb {
     @include mq(tablet) {
         width: 100%;
         display: flex;
@@ -29,11 +29,10 @@
         align-items: center;
     }
 
-        @include mq(desktop) {
-            justify-content: start;
-        }
+    @include mq(desktop) {
+        justify-content: start;
+    }
  }
-
 
 @import "./address";
 

@@ -4,7 +4,6 @@
     text-align: center;
     color: var(--white-color);
     max-width: 480px;
-    // height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--hero-bkgrnd);
@@ -54,12 +53,12 @@
     text-transform: uppercase;
     text-align: center;
 
-    @include mq(desktop){
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
-        padding: 0;
-    }
+        @include mq(desktop){
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+            padding: 0;
+        }
 }
 
 .hero__button {
