@@ -1,4 +1,6 @@
 .mobile-menu {
+    border-radius: 4px;
+    box-shadow: var(--portfolio-card-shadow);
     &__icon {
     fill: currentColor;
 }

@@ -3,36 +3,41 @@
     flex-wrap: wrap;
     justify-content: left;
     margin-bottom: 40px;
-    max-width: 370px;
-      
+          
     &__item {
         margin-bottom: 15px;
+        
+        @include mq(tablet) {
+            margin-bottom: 0;
+        }
     }
 
-    &__item:not(:first-child) {
-        margin-left: 8px;
+    &__item:not(:last-child) {
+        margin-right: 8px;
     }
     
+    @media screen and (min-width: 393px) {
+        
     &__item:nth-last-child(-n+2){
             margin-bottom: 0;
     }
 
-    &__item:nth-child(4n) {
-            margin-left: 0;
-
-            @include mq(tablet){
-                margin-left: 8px;
+    &__item:nth-child(3n) {
+            margin-right: 0;
+            
+            @include mq(tablet) {
+                margin-right: 8px;
             }
     }
-    
-    @include mq(mobile-small){
-        max-width: 300px;
+}
+    @media screen and (max-width: 392px) {
+         
         &__item:nth-child(4n){
-            margin-left: 8px;
+            margin-right: 8px;
         }
 
-        &__item:nth-child(2n+1) {
-                margin-left: 0;
+        &__item:nth-child(2n) {
+                margin-right: 0;
         }
 
         &__item:last-child {

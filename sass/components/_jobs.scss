@@ -20,8 +20,8 @@
     z-index: -100;
 }
 
-.jobs__item:not(:first-child) {
-    margin-left: 30px;
+.jobs__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .jobs__text-area {
